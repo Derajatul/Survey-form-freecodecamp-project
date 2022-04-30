@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!--Heading-->
+		<div id="heading">
+			<h1 id="title">Survey Perguruan Tinggi Siswa Kelas 12</h1>
+			<p id="description">Survey untuk siswa yang ingin melanjutkan ke perguruan tinggi</p>
+		</div>
+		<!--Akhir Heading-->
+		<div id="main">
+			<form action="" id="survey-form">
+				<div id="input-fields">
+					<label id="name-label">Nama:</label><br />
+					<input type="text" id="name" placeholder="Name" name="name" required />
+					<br /><br />
+					<label id="email-label">Email:</label><br />
+					<input type="email" id="email" placeholder="Email" name="email" required />
+					<br /><br />
+					<label id="number-label">Umur:</label><br />
+					<input type="number" id="number" min="16" max="20" placeholder="Num" />
+				</div>
+				<div>
+					<br />
+					<label for="">Apakah kamu mau kuliah?</label><br />
+					<select name="dropdown" id="dropdown">
+						<option value="1">Iya</option>
+						<option value="2">Tidak</option>
+						<option value="3">Bekerja</option>
+						<option value="4">Mending turu</option>
+					</select>
+				</div>
+				<div id="radio">
+					<br />
+					<label for="">Jika iya, Jurusan apa?</label><br />
+					<input type="radio" name="gender" value="1" checked class="radio-inline" />Pendidikan <br />
+					<input type="radio" name="gender" value="2" class="radio-inline" />Teknik <br />
+					<input type="radio" name="gender" value="3" class="radio-inline" />Bisnis <br />
+					<input type="radio" name="gender" value="4" class="radio-inline" />Kesehatan <br />
+				</div>
+				<div>
+					<br />
+					<label for="">Kesibukan?</label><br />
+					<input type="checkbox" checked value="1" />Kuliah <input type="checkbox" value="2" />Kerja <input type="checkbox" value="3" />Turu
+				</div>
+				<div>
+					<br />
+					<label for="">kasih saya masukan</label><br />
+					<textarea name="" id="" cols="30" rows="10" placeholder="Beri saya masukan"></textarea><br />
+					<button id="submit">submit</button>
+				</div>
+			</form>
+		</div>
+
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	</body>
+</html>
